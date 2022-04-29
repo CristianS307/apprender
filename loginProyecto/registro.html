@@ -1,0 +1,54 @@
+<?php
+ #   require='dataBase.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>registrate</title>
+</head>
+<body>
+    <div class="contain">
+        <h2>Registrate</h2>
+        <span>Si ya tienes cuanta <a href="inicioSesion.html">Inicio Sesion</a></span>
+        <form action="POST" name="registro">
+                <select class="tipoDocumento" id="tipoDocumento">
+                  <option selected>tipo de documento</option>
+                  <option value="1">T.I</option>
+                  <option value="2">C.C</option>
+                  <option value="3">C.E</option>
+                </select>
+            <input type="text" placeholder="numero de documento" name="numDoc" id="numDoc" class="numDoc">
+            <input type="text" placeholder="nombres" name="nombre" id="nombre" class="nombre">
+            <input type="text" placeholder="apellidos" name="apellidos" id="apellidos" class="apellidos" >
+            <input type="text" placeholder="direccion" name="direccion" id="direccion" class="direccion">
+            <input type="text" placeholder="ciudad" name="ciudad" id="ciudad" class="ciudad">
+            <input type="number" placeholder="telefono" name="telefono" id="telefono" class="tel">
+            <fieldset class="checs">
+                <legend class="genero">Genero</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Hombre
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Mujer
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            <input type="text" placeholder="Example@example.com" name="correo" id="correo" class="correo">
+            <input type="password" placeholder="contraseña" name="correo" id="password" class="password">
+            <input type="submit" value="enviar" class="boton">
+        </form>
+    </div>
+    
+</body>
+</html>
