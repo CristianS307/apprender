@@ -1,0 +1,11 @@
+#prevenir acceso a los archivos .htaccess
+<files .htaccess>
+  order allow,deny
+  deny form all
+</files>
+
+#Ocultar listado de archivos
+IndexIgnore *
+
+#Redireccionar al index
+RedirectMatch 301 ^(.*)$ http://localhost/aprender/
